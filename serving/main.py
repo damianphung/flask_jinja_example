@@ -13,5 +13,9 @@ def index():
     list_example = ['hello', 'world']
     return render_template('index.html', list_example=list_example)
 
+
+def main():
+	app.run(debug=True)
+	
 if __name__ == '__main__':
- app.run(debug=True)
+	main()
